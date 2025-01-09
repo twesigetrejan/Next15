@@ -1,7 +1,6 @@
 import { PRODUCTS } from "@/constants";
 import Link from "next/link";
 
-
 export default function ProductDetails({
   params,
 }: {
