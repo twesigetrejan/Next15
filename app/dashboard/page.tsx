@@ -70,7 +70,6 @@ export default function DashboardPage() {
     }
   };
 
-  // Fetch todos on component mount
   useEffect(() => {
     const fetchData = async () => {
       try {
