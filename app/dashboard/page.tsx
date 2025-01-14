@@ -17,7 +17,7 @@ export default function DashboardPage() {
   // Add a new todo
   const addTodo = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newTask) return;
+    if (!newTask) return; 
 
     const { data: insertedData, error } = await supabase
       .from("todos")
@@ -103,7 +103,7 @@ export default function DashboardPage() {
           />
           <button
             type="submit"
-            className="bg-blue-400 text-white py-2 px-4 rounded-md hover:bg-blue-500"
+            className="bg-blue-400 text-white py-2 px-4 rounded-md hover:bg-blue-600"
           >
             Add Task
           </button>
