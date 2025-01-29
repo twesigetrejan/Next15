@@ -7,17 +7,19 @@ interface Todo {
   id: number;
   task: string;
 }
-
 export default function DashboardPage() {
   const [data, setData] = useState<Todo[]>([]);
   const [newTask, setNewTask] = useState("");
   const [editingId, setEditingId] = useState<number | null>(null);
   const [editingTask, setEditingTask] = useState("");
 
+
+
   // Add a new todo
   const addTodo = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newTask) return; 
+
+    if (!newTask) return;
 
     const { data: insertedData, error } = await supabase
       .from("todos")
@@ -48,7 +50,7 @@ export default function DashboardPage() {
       .eq("id", editingId);
 
     if (error) {
-      console.error("Error updating todo:", error);
+      console.error("Error updating todo, try again:", error);
     } else {
       setData((prevData) =>
         prevData.map((todo) =>
