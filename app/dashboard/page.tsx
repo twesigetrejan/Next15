@@ -50,7 +50,7 @@ export default function DashboardPage() {
       .eq("id", editingId);
 
     if (error) {
-      console.error("Error updating todo, try again:", error);
+      console.error("Error updating todo:", error);
     } else {
       setData((prevData) =>
         prevData.map((todo) =>
