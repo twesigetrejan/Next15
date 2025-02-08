@@ -135,14 +135,14 @@ export default function DashboardPage() {
                   <button
                     type="button"
                     onClick={() => setEditingId(null)}
-                    className="bg-gray-400 text-white py-1 px-3 rounded-md hover:bg-gray-500"
+                    className="bg-gray-300 text-white py-1 px-3 rounded-md hover:bg-gray-500"
                   >
                     Cancel
                   </button>
                 </form>
               ) : (
                 <>
-                  <p className="w-[350px]">{item.task}</p>
+                  <p className="w-[360px]">{item.task}</p>
                   <div className="flex gap-2">
                     <button
                       onClick={() => startEditing(item.id, item.task)}
