@@ -105,7 +105,7 @@ export default function DashboardPage() {
           />
           <button
             type="submit"
-            className="bg-blue-400 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+            className="bg-blue-400 text-white py-2 px-5 rounded-md hover:bg-blue-600"
           >
             Add Task
           </button>
