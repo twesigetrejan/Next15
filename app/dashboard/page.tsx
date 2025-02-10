@@ -146,13 +146,13 @@ export default function DashboardPage() {
                   <div className="flex gap-2">
                     <button
                       onClick={() => startEditing(item.id, item.task)}
-                      className="bg-green-400 text-white py-1 px-3 rounded-md hover:bg-green-500"
+                      className="bg-green-400 text-white py-1 px-4 rounded-md hover:bg-green-500"
                     >
                       Edit
                     </button>
                     <button
                       onClick={() => deleteTodo(item.id)}
-                      className="bg-red-600 text-white py-1 px-3 rounded-md hover:bg-red-700"
+                      className="bg-red-500 text-white py-1 px-3 rounded-md hover:bg-red-700"
                     >
                       Delete
                     </button>
