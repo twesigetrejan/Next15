@@ -111,7 +111,7 @@ export default function DashboardPage() {
           </button>
         </form>
 
-        <h2 className="text-lg font-semibold mt-4">Todo List</h2>
+        <h2 className="text-lg font-semibold mt-4">Todo Items</h2>
         <div className="flex flex-col gap-2">
           {data.map((item) => (
             <div
