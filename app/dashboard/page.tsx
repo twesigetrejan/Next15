@@ -152,7 +152,7 @@ export default function DashboardPage() {
                     </button>
                     <button
                       onClick={() => deleteTodo(item.id)}
-                      className="bg-red-500 text-white py-1 px-4 rounded-md hover:bg-red-700"
+                      className="bg-red-500 text-white py-1 px-4 rounded-md hover:bg-red-800"
                     >
                       Delete
                     </button>
