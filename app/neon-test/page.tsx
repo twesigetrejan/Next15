@@ -12,7 +12,6 @@ export interface Book {
 
 export default function BooksPage() {
   const [books, setBooks] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchBooks() {
@@ -22,15 +21,11 @@ export default function BooksPage() {
         setBooks(data.books);
       } catch (error) {
         console.error("Error fetching books:", error);
-      } finally {
-        setLoading(false);
       }
     }
 
     fetchBooks();
   }, []);
-
-  if (loading) return <p className="text-center">Loading...</p>;
 
   return (
     <div className="max-w-4xl mx-auto p-6">
