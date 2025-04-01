@@ -1,8 +1,10 @@
 // app/api/books/route.js
 import { neon } from "@neondatabase/serverless";
 
+const db_url = process.env.DATABASE_URL as string;
+
 export async function GET() {
-  const sql = neon(process.env.DATABASE_URL);
+  const sql = neon(db_url);
 
   // Example: Get all books with author names and genres
   const books = await sql`
