@@ -44,10 +44,16 @@ export default function BooksPage() {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-4">Book List</h1>
+      <div className="flex justify-between mb-4 items-center">
+        <h1 className="text-2xl font-bold">Book List</h1>
+        <button className="bg-blue-500 px-4 rounded-lg hover:bg-blue-700 text-white py-2">
+          Add a book
+        </button>
+      </div>
+
       <ul className="space-y-4">
         {books.map((book: Book) => (
-          <li key={book.book_id} className="p-4 border rounded-lg shadow-md">
+          <li key={book.book_id} className="p-4 border rounded-lg shadow-md bg-white">
             <h2 className="text-xl font-semibold">{book.title}</h2>
             <p className="text-gray-600">Author: {book.author_name}</p>
             <p className="text-gray-500">Published: {book.published_year}</p>
