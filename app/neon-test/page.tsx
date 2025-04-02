@@ -60,7 +60,7 @@ export default function BooksPage() {
             <p className="text-gray-700">Genres: {book.genres || "N/A"}</p>
             <button
               onClick={() => deleteBook(book.book_id)}
-              className="mt-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-700"
+              className="mt-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-800"
             >
               Delete
             </button>
